@@ -1,0 +1,10 @@
+body{
+	background-image: url("https://wallpaperscraft.com/image/wood_dark_background_texture_55321_3840x2400.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+#heading{
+	color: white;
+}

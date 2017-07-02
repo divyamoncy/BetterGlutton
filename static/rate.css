@@ -1,0 +1,16 @@
+body{
+	background-image: url('ratebg.jpg');
+}
+
+#head{
+	background-color:  rgba(1,1,1,0.9);
+	color: white;
+	font-family: Copperplate Gothic;
+	font-size: 30px;
+	height: 80px;
+
+}
+
+#rate{
+	padding-top: 10px;
+}

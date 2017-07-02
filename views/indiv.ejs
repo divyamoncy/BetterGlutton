@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+	
+	<link rel="stylesheet" type="text/css" href="indiv.css">
+
+	
+	
+</head>
+<body style="background-image:url('https://st2.depositphotos.com/1430176/5906/v/950/depositphotos_59062065-stock-illustration-vector-doodle-coffee-seamless-background.jpg'); background-attachment: fixed; margin:0px;">
+
+<div class="row" style="background-color:  rgba(14, 1, 1,0.9);height:80px;margin-bottom: 40px;padding-left:60px;padding-top: 10px;"><div class="col-md-6" align="left"><b style="color:#FF5733;font-family:Freestyle Script Regular;font-size:60px;"><%=res[0].name%></b></div><div class="col-md-6" align="right">
+<a href="/"><button type="button" class="btn btn-default" style="color:#F0FE7B;border-color: #FF5733;background-color:rgba(14, 1, 1,0.9);;border-width:2px;font-size: 40px;font-family:Freestyle Script Regular; margin-right:40px;margin-top: 30px;">Go to Home</button></a></div></div>
+
+
+
+
+
+
+
+
+
+
+<%var a=0,t=0,s=0,tot=0%>
+
+
+
+ 
+    <% for(var i=0;i<res.length;i++) 
+    { a+=res[i].ambience;
+    t+=res[i].taste;
+    s+=res[i].service;}
+a=a/res.length;
+t=t/res.length;
+s=s/res.length;
+tot=a+t+s;
+a=Math.round(a*100)/100;
+t=Math.round(t*100)/100;
+s=Math.round(s*100)/100;
+    %>
+    <
+      <div class="jumbotron" style="background-color: rgba(14, 1, 1,0.9);font-family:Gabriola Regular;padding: 20px;color:white;border-style: solid;border-width:2px;border-color: #FF5733;border-radius:25px;margin: 350px; margin-top: 40px; margin-bottom: 30px;" align="center">
+      
+      <div class="caption">
+      <h3><b style="font-size:50px; color: #FF5733">RATING</b></h3>
+
+
+        
+        <p style="color: #F0FE7B;font-size:40px">
+        <b>Ambience: <%=a%></b><br>
+        <b>Taste: <%= t%></b><br>
+        <b>Service: <%=s%></b><br>
+        
+        </p>
+        
+        
+      </div>
+    </div>
+    <%for(var j=0;j<reso.length;j++){%>
+
+ <div class="jumbotron" style="background-color: rgba(14, 1, 1,0.9);font-family:Gabriola Regular; color:white;padding-left: 45px;border-style: solid;border-width:2px;border-color: #FF5733;border-radius:25px;margin:40px;" align="left">
+      
+      <div class="caption">
+      <p style="font-size:40px">
+        <b style="color:#FF5733;"><%=reso[j].me+" wrote"%></b><br>
+        <b style="color: #F0FE7B;"><%= reso[j].opinion%></b><br>
+        
+        
+        </p>
+        </div>
+        </div><%}%>
+
+
+
+    
+  
+  
+  
+
+</body>
+</html>

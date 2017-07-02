@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="blogView.css">
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="container-fluid" style="margin:0px;padding:0px;" align="center">
+<nav class="navbar navbar-inverse" align="center" style="background-color:transparent;font-family:Gabriola Regular;border-width:0px;">
+  <h3 id="heading" style="font-size:70px;color: white;"><b>REVIEWS</b></h3>
+ 
+</nav>
+
+<a href="/"><button type="button" class="btn btn-default" style="color:white;border-color: white;background-color:transparent;border-width:2px;font-size: 40px;font-family:Gabriola Regular;" align="center">Go to Home</button></a>
+</div>
+<div class="container-fluid">
+<div class="row">
+
+
+<%  
+for(var i=0;i<result.length;i++)
+{%>
+
+<div class="thumbnail" style="background-color:transparent; color:white; margin:40px;border-width:2px;border-radius: 35px;padding:50px;font-family:Gabriola Regular;">
+
+
+	
+<h2 style="font-size:40px;"><b>Restaurant: <%= result[i].name %> </b></h2>
+<p style="font-size:30px;"><b>Opinion: <%= result[i].opinion %></b><br> <b>By <%="  "+result[i].me  %></b><br>
+ </p>
+
+ 
+ <br>
+
+ 
+	
+</div>
+
+<%}%>
+</div>
+</div>
+
+
+</body>
+</html>
