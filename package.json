@@ -1,0 +1,19 @@
+{
+  "name": "finalglutton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hackfood.js",
+  "dependencies": {
+    "cowsay": "^1.1.9",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "nedb": "^1.8.0",
+    "shrekjs": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node hackfood.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
