@@ -4,9 +4,11 @@
   "description": "",
   "main": "hackfood.js",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "cowsay": "^1.1.9",
     "ejs": "^2.5.6",
     "express": "^4.15.3",
+    "mongojs": "^2.4.0",
     "nedb": "^1.8.0",
     "shrekjs": "^1.1.1"
   },
